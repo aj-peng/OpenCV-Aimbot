@@ -35,6 +35,7 @@ class Config:
         self.capture_radius = self.capture_size // 2
 
         self.compensation = 0.3 # (0 < value < 1)
+        self.sensitivity_scalar = 0.55 # Based on game
         self.mouse_sensitivity = 0.36
         self.game_sensitivity = 0.45
         self.aim_sensitivity = 0.85
@@ -56,7 +57,7 @@ class Config:
 
     def calculate_sensitivity(self):
         converted = self.mouse_sensitivity * self.aim_sensitivity
-        return ((self.game_sensitivity * converted) / 0.55) + self.compensation
+        return ((self.game_sensitivity * converted) / self.sensitivity_scalar) + self.compensation
 
 class Controller:
     def __init__(self):
