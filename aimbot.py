@@ -28,13 +28,13 @@ class Config:
         # Display resolution
         self.screen_width = 1920
         self.screen_height = 1200
-        self.capture_size = 240
+        self.capture_size = 128
 
         self.screen_center_x = self.screen_width // 2
         self.screen_center_y = self.screen_height // 2
         self.capture_radius = self.capture_size // 2
 
-        self.compensation = 0.2 # (0 < value < 1)
+        self.compensation = 0.3 # (0 < value < 1)
         self.mouse_sensitivity = 0.36
         self.game_sensitivity = 0.45
         self.aim_sensitivity = 0.85
@@ -126,10 +126,10 @@ class Controller:
             if target_location:
                 offset_x, offset_y = self.calculate_aim_offset(target_location)
                 perform_aim_action(offset_x, offset_y)
-                print("TARGET ACQUIRED")
+                # winsound.Beep(1250, 100)
 
         if self.window.winfo_exists():
-            self.window.after(5, self.run, ())
+            self.window.after(1, self.run, ())
 
     def exit(self):
         self.active = False
