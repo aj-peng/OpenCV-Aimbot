@@ -5,9 +5,9 @@ This script is an aim assistance tool that uses computer vision (template matchi
 
 ## Instructions
 - Run aimbot.py
-- <RMB> Hold to activate aiming (when toggled on)
-- <Up> Toggle Aimbot ON/OFF
-- <Down> Exit Aimbot
+- "RMB" Hold to activate aiming (when toggled on)
+- "Up" Toggle Aimbot ON/OFF
+- "Down" Exit Aimbot
 
 ## Dependencies
 Required libraries: pywin32, numpy, opencv-python, mss
