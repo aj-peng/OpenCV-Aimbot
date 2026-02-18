@@ -1,5 +1,3 @@
-# OpenCV-Aimbot
-
 ## Overview  
 This script is an aim assistance tool that uses computer vision (template matching) to detect targets and automatically move the mouse cursor when aiming.
 
