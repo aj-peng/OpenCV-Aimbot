@@ -1,5 +1,5 @@
 ## Overview  
-This script is an aim assistance tool that uses computer vision (template matching) to detect targets and automatically move the mouse cursor when aiming.
+This project is a computer vision system written in Python that captures live screen regions using MSS and analyzes the frames with OpenCV for target detection via normalized template matching. It features configurable detection thresholds and sensitivity settings to convert visual offsets into precise mouse movements using the Win32 API.  
 
 ## Instructions
 Run `aimbot.py`  
